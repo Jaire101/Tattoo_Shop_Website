@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Request a tattoo consultation with an artist at Ink & Iron Tattoo Studio."
+    />
+
+    <title>Book a Consultation | Ink & Iron Tattoo Studio</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="logo">
+          Ink <span>&</span> Iron
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html#services">Services</a></li>
+
+          <li>
+            <a href="booking.html" class="nav-button active">
+              Book a Consultation
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero booking-page-hero">
+        <div class="section-container page-hero-content">
+          <p class="section-label">Start your project</p>
+
+          <h1>Book a Consultation</h1>
+
+          <p>
+            Tell us about your tattoo idea, preferred style, placement, and
+            availability. Our studio will review your request and recommend the
+            best next step.
+          </p>
+        </div>
+      </section>
+
+      <section class="section booking-section">
+        <div class="section-container booking-layout">
+          <aside class="booking-information">
+            <p class="section-label">Before you submit</p>
+
+            <h2>What to Expect</h2>
+
+            <p>
+              Consultation requests are reviewed by the studio before an
+              appointment is scheduled. Submitting this form does not
+              automatically confirm a tattoo appointment.
+            </p>
+
+            <div class="booking-steps">
+              <article class="booking-step">
+                <span>01</span>
+
+                <div>
+                  <h3>Describe Your Idea</h3>
+                  <p>
+                    Provide as much information as possible about your concept,
+                    style, size, and placement.
+                  </p>
+                </div>
+              </article>
+
+              <article class="booking-step">
+                <span>02</span>
+
+                <div>
+                  <h3>Studio Review</h3>
+                  <p>
+                    Our team reviews your request and matches the project with
+                    an appropriate artist.
+                  </p>
+                </div>
+              </article>
+
+              <article class="booking-step">
+                <span>03</span>
+
+                <div>
+                  <h3>Consultation</h3>
+                  <p>
+                    We contact you to discuss the project, pricing, deposit,
+                    and appointment availability.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="booking-contact-card">
+              <h3>Studio Information</h3>
+
+              <address>
+                1250 Roosevelt Street<br />
+                Phoenix, AZ 85004
+              </address>
+
+              <a href="tel:+16025550184">(602) 555-0184</a>
+
+              <a href="mailto:studio@inkandiron.com">
+                studio@inkandiron.com
+              </a>
+
+              <p>
+                Tuesday–Saturday<br />
+                12:00 PM–8:00 PM
+              </p>
+            </div>
+          </aside>
+
+          <div class="booking-form-wrapper">
+            <div class="form-heading">
+              <p class="section-label">Consultation request</p>
+              <h2>Tell Us About Your Tattoo</h2>
+              <p>
+                Fields marked with an asterisk are required.
+              </p>
+            </div>
+
+            <form class="booking-form" id="booking-form" novalidate>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="first-name">
+                    First name <span aria-hidden="true">*</span>
+                  </label>
+
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="firstName"
+                    autocomplete="given-name"
+                    required
+                  />
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="last-name">
+                    Last name <span aria-hidden="true">*</span>
+                  </label>
+
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="lastName"
+                    autocomplete="family-name"
+                    required
+                  />
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    Email address <span aria-hidden="true">*</span>
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">
+                    Phone number <span aria-hidden="true">*</span>
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    required
+                  />
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="artist">Preferred artist</label>
+
+                  <select id="artist" name="artist">
+                    <option value="">No preference</option>
+                    <option value="adrian-cole">Adrian Cole</option>
+                    <option value="maya-reyes">Maya Reyes</option>
+                    <option value="marcus-stone">Marcus Stone</option>
+                    <option value="naomi-tanaka">Naomi Tanaka</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="tattoo-style">
+                    Tattoo style <span aria-hidden="true">*</span>
+                  </label>
+
+                  <select id="tattoo-style" name="tattooStyle" required>
+                    <option value="">Select a style</option>
+                    <option value="black-grey">Black and grey</option>
+                    <option value="realism">Realism</option>
+                    <option value="fine-line">Fine line</option>
+                    <option value="traditional">Traditional</option>
+                    <option value="neo-traditional">
+                      Neo-traditional
+                    </option>
+                    <option value="japanese">Japanese</option>
+                    <option value="color">Color</option>
+                    <option value="other">Other or unsure</option>
+                  </select>
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="placement">
+                    Placement <span aria-hidden="true">*</span>
+                  </label>
+
+                  <input
+                    type="text"
+                    id="placement"
+                    name="placement"
+                    placeholder="Example: upper arm"
+                    required
+                  />
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="tattoo-size">
+                    Approximate size <span aria-hidden="true">*</span>
+                  </label>
+
+                  <select id="tattoo-size" name="tattooSize" required>
+                    <option value="">Select a size</option>
+                    <option value="small">Small — under 3 inches</option>
+                    <option value="medium">Medium — 3 to 6 inches</option>
+                    <option value="large">Large — over 6 inches</option>
+                    <option value="multi-session">
+                      Large multi-session project
+                    </option>
+                  </select>
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="budget">Estimated budget</label>
+
+                  <select id="budget" name="budget">
+                    <option value="">Select a range</option>
+                    <option value="150-300">$150–$300</option>
+                    <option value="300-600">$300–$600</option>
+                    <option value="600-1000">$600–$1,000</option>
+                    <option value="1000-plus">$1,000+</option>
+                    <option value="unsure">Not sure yet</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="availability">
+                    Preferred availability
+                  </label>
+
+                  <select id="availability" name="availability">
+                    <option value="">Select availability</option>
+                    <option value="weekday-afternoon">
+                      Weekday afternoons
+                    </option>
+                    <option value="weekday-evening">
+                      Weekday evenings
+                    </option>
+                    <option value="saturday">Saturday</option>
+                    <option value="flexible">Flexible</option>
+                  </select>
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label for="tattoo-description">
+                    Describe your tattoo idea
+                    <span aria-hidden="true">*</span>
+                  </label>
+
+                  <textarea
+                    id="tattoo-description"
+                    name="tattooDescription"
+                    rows="7"
+                    minlength="20"
+                    placeholder="Describe the subject, style, important details, meaning, and any references you have in mind."
+                    required
+                  ></textarea>
+
+                  <div class="textarea-information">
+                    <small class="field-error"></small>
+                    <small id="description-count">0 / 1000</small>
+                  </div>
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label for="reference-image">
+                    Reference image
+                  </label>
+
+                  <input
+                    type="file"
+                    id="reference-image"
+                    name="referenceImage"
+                    accept=".jpg,.jpeg,.png,.webp"
+                  />
+
+                  <small class="field-note">
+                    Accepted formats: JPG, PNG, or WebP. Maximum recommended
+                    size: 5 MB.
+                  </small>
+                </div>
+
+                <div class="form-group form-group-full checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="age-confirmation"
+                    name="ageConfirmation"
+                    required
+                  />
+
+                  <label for="age-confirmation">
+                    I confirm that I am at least 18 years old.
+                    <span aria-hidden="true">*</span>
+                  </label>
+
+                  <small class="field-error"></small>
+                </div>
+
+                <div class="form-group form-group-full checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="contact-permission"
+                    name="contactPermission"
+                    required
+                  />
+
+                  <label for="contact-permission">
+                    I agree to be contacted regarding this consultation
+                    request. <span aria-hidden="true">*</span>
+                  </label>
+
+                  <small class="field-error"></small>
+                </div>
+              </div>
+
+              <button type="submit" class="button button-primary form-submit">
+                Submit Consultation Request
+              </button>
+
+              <p class="form-disclaimer">
+                This form is part of a demonstration website. No real tattoo
+                appointment will be scheduled.
+              </p>
+
+              <div
+                class="form-success"
+                id="form-success"
+                role="status"
+                aria-live="polite"
+                hidden
+              >
+                <strong>Request received.</strong>
+
+                <p>
+                  Thank you for sharing your tattoo idea. The studio will review
+                  the information and contact you about the next step.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-faq-section">
+        <div class="section-container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Frequently asked questions</p>
+              <h2>Before Your Appointment</h2>
+            </div>
+
+            <p>
+              Every project is different, but these answers cover the most
+              common questions clients ask before booking.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>How much will my tattoo cost?</summary>
+
+              <p>
+                Pricing depends on the size, detail, placement, artist, and time
+                required. A final estimate is provided after the consultation.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Is a deposit required?</summary>
+
+              <p>
+                Yes. A nonrefundable deposit is required to reserve an
+                appointment and begin custom design work.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Can I bring my own design?</summary>
+
+              <p>
+                Yes. Reference material is encouraged, but the artist may adapt
+                the design to improve composition, placement, and longevity.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>How should I prepare for my appointment?</summary>
+
+              <p>
+                Eat a full meal, stay hydrated, avoid alcohol, and wear
+                comfortable clothing that provides access to the tattoo area.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do you accept walk-ins?</summary>
+
+              <p>
+                Walk-ins may be accepted depending on artist availability, but
+                consultations and scheduled appointments are recommended.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            Ink <span>&</span> Iron
+          </a>
+
+          <p>
+            Custom tattoo work created with purpose, precision, and respect for
+            the craft.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <ul>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="booking.html">Book an appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Visit</h3>
+
+          <address>
+            1250 Roosevelt Street<br />
+            Phoenix, AZ 85004
+          </address>
+
+          <p>
+            Tuesday–Saturday<br />
+            12:00 PM–8:00 PM
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Connect</h3>
+
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="tel:+16025550184">(602) 555-0184</a></li>
+
+            <li>
+              <a href="mailto:studio@inkandiron.com">
+                studio@inkandiron.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-container footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Ink & Iron Tattoo Studio.
+          All rights reserved.
+        </p>
+
+        <p>Website designed by Jaire Development.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
