@@ -192,6 +192,7 @@ h3 {
   left: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(8, 8, 8, 0.88);
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
 
@@ -1003,6 +1004,7 @@ h3 {
 ======================================== */
 
 html {
+  text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -2216,5 +2218,161 @@ a {
 
   .textarea-information {
     display: block;
+  }
+}
+/* ========================================
+   Generated website images
+======================================== */
+
+/* Homepage hero */
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.72) 42%,
+      rgba(0, 0, 0, 0.22) 100%
+    ),
+    url("../images/hero-tattoo.jpg") center center / cover no-repeat;
+}
+
+/* Homepage studio image */
+
+.image-placeholder {
+  position: relative;
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.38),
+      rgba(0, 0, 0, 0.04)
+    ),
+    url("../images/studio-interior.jpg") center center / cover no-repeat;
+}
+
+.image-placeholder span {
+  display: none;
+}
+
+/* Artist photographs */
+
+.artist-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.artist-image::before {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.62),
+    transparent 52%
+  );
+  content: "";
+}
+
+.artist-image span {
+  display: none;
+}
+
+.artist-image-one {
+  background-image: url("../images/artist-adrian.jpg");
+  background-position: center top;
+}
+
+.artist-image-two {
+  background-image: url("../images/artist-maya.jpg");
+  background-position: center top;
+}
+
+.artist-image-three {
+  background-image: url("../images/artist-marcus.jpg");
+  background-position: center top;
+}
+
+.artist-image-four {
+  background-image: url("../images/artist-naomi.jpg");
+  background-position: center top;
+}
+
+/* Gallery photographs */
+
+.tattoo-art {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tattoo-art-one {
+  background-image: url("../images/tattoo-01.jpg");
+}
+
+.tattoo-art-two {
+  background-image: url("../images/tattoo-02.jpg");
+}
+
+.tattoo-art-three {
+  background-image: url("../images/tattoo-03.jpg");
+}
+
+.tattoo-art-four {
+  background-image: url("../images/tattoo-04.jpg");
+}
+
+.tattoo-art-five {
+  background-image: url("../images/tattoo-05.jpg");
+}
+
+.tattoo-art-six {
+  background-image: url("../images/tattoo-06.jpg");
+}
+
+.tattoo-art-seven {
+  background-image: url("../images/tattoo-07.jpg");
+}
+
+.tattoo-art-eight {
+  background-image: url("../images/tattoo-08.jpg");
+}
+
+.tattoo-art-nine {
+  background-image: url("../images/tattoo-09.jpg");
+}
+
+.tattoo-art-ten {
+  background-image: url("../images/tattoo-10.jpg");
+}
+
+/* Keep gallery wording readable over photographs */
+
+.tattoo-art::before {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.96) 0%,
+    rgba(0, 0, 0, 0.5) 42%,
+    rgba(0, 0, 0, 0.05) 75%
+  );
+}
+
+/* Phone image positioning */
+
+@media (max-width: 600px) {
+  .hero {
+    background-position: 66% center;
+  }
+
+  .image-placeholder {
+    background-position: center;
+  }
+
+  .artist-image {
+    background-position: center top;
+  }
+
+  .tattoo-art {
+    background-position: center;
   }
 }
