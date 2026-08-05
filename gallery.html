@@ -18,7 +18,91 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
+  <body class="themed-page gallery-page">
+    <div class="page-floral-background gallery-floral" aria-hidden="true">
+  <svg
+    viewBox="0 0 1440 1200"
+    preserveAspectRatio="xMidYMid slice"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <!-- Diagonal top-right vine -->
+    <path
+      class="page-vine"
+      d="M1510 20
+         C1330 80, 1360 220, 1185 275
+         C1035 325, 1080 465, 910 520"
+    />
+
+    <path class="page-thorn" d="M1355 118 L1315 82 L1350 155 Z" />
+    <path class="page-thorn" d="M1215 255 L1250 210 L1218 292 Z" />
+    <path class="page-thorn" d="M1060 395 L1017 365 L1054 435 Z" />
+
+    <path
+      class="page-leaf"
+      d="M1300 175 C1230 142, 1200 192, 1268 225 C1298 224, 1315 202, 1300 175 Z"
+    />
+    <path
+      class="page-leaf"
+      d="M1125 340 C1192 310, 1223 360, 1155 394 C1125 392, 1110 370, 1125 340 Z"
+    />
+
+    <!-- Lower-left vine -->
+    <path
+      class="page-vine"
+      d="M-80 1000
+         C100 920, 190 1060, 350 950
+         C480 860, 560 980, 700 860"
+    />
+
+    <path class="page-thorn" d="M115 957 L76 920 L110 995 Z" />
+    <path class="page-thorn" d="M310 966 L350 920 L316 1004 Z" />
+    <path class="page-thorn" d="M510 910 L468 877 L505 950 Z" />
+
+    <!-- Large spider lily -->
+    <g class="spider-lily" transform="translate(220 290)">
+      <circle class="spider-center" r="24" />
+
+      <path class="spider-petal" d="M0 0 C-15 -70 -90 -128 -145 -86" />
+      <path class="spider-petal" d="M0 0 C38 -70 105 -118 157 -63" />
+      <path class="spider-petal" d="M0 0 C86 -28 160 -5 164 58" />
+      <path class="spider-petal" d="M0 0 C68 55 72 133 8 158" />
+      <path class="spider-petal" d="M0 0 C-26 88 -98 132 -143 78" />
+      <path class="spider-petal" d="M0 0 C-91 35 -157 4 -151 -57" />
+
+      <path class="spider-stamen" d="M0 0 C-45 -115 -118 -150 -180 -125" />
+      <path class="spider-stamen" d="M0 0 C25 -125 100 -168 170 -132" />
+      <path class="spider-stamen" d="M0 0 C118 -55 190 -12 205 58" />
+      <path class="spider-stamen" d="M0 0 C90 86 62 166 10 205" />
+      <path class="spider-stamen" d="M0 0 C-85 103 -158 91 -205 40" />
+
+      <circle class="stamen-tip" cx="-180" cy="-125" r="5" />
+      <circle class="stamen-tip" cx="170" cy="-132" r="5" />
+      <circle class="stamen-tip" cx="205" cy="58" r="5" />
+      <circle class="stamen-tip" cx="10" cy="205" r="5" />
+      <circle class="stamen-tip" cx="-205" cy="40" r="5" />
+    </g>
+
+    <!-- Smaller spider lily -->
+    <g class="spider-lily" transform="translate(1230 910) rotate(18) scale(0.72)">
+      <circle class="spider-center" r="24" />
+
+      <path class="spider-petal" d="M0 0 C-15 -70 -90 -128 -145 -86" />
+      <path class="spider-petal" d="M0 0 C38 -70 105 -118 157 -63" />
+      <path class="spider-petal" d="M0 0 C86 -28 160 -5 164 58" />
+      <path class="spider-petal" d="M0 0 C68 55 72 133 8 158" />
+      <path class="spider-petal" d="M0 0 C-26 88 -98 132 -143 78" />
+      <path class="spider-petal" d="M0 0 C-91 35 -157 4 -151 -57" />
+
+      <path class="spider-stamen" d="M0 0 C-45 -115 -118 -150 -180 -125" />
+      <path class="spider-stamen" d="M0 0 C25 -125 100 -168 170 -132" />
+      <path class="spider-stamen" d="M0 0 C118 -55 190 -12 205 58" />
+
+      <circle class="stamen-tip" cx="-180" cy="-125" r="5" />
+      <circle class="stamen-tip" cx="170" cy="-132" r="5" />
+      <circle class="stamen-tip" cx="205" cy="58" r="5" />
+    </g>
+  </svg>
+</div>
     <header class="site-header">
       <nav class="navbar" aria-label="Main navigation">
         <a href="index.html" class="logo">

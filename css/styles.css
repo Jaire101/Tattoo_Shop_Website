@@ -314,11 +314,7 @@ h3 {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    var(--background) 0%,
-    transparent 28%
-  );
+  background: linear-gradient(to top, var(--background) 0%, transparent 28%);
 }
 
 .hero-content {
@@ -416,7 +412,11 @@ h3 {
   min-height: 580px;
   border: 1px solid var(--border);
   background:
-    radial-gradient(circle at center, rgba(182, 138, 74, 0.17), transparent 40%),
+    radial-gradient(
+      circle at center,
+      rgba(182, 138, 74, 0.17),
+      transparent 40%
+    ),
     linear-gradient(145deg, #25211c, #0e0e0e);
 }
 
@@ -576,20 +576,32 @@ h3 {
   padding: 25px;
   border: 1px solid var(--border);
   background:
-    radial-gradient(circle at 60% 35%, rgba(182, 138, 74, 0.2), transparent 30%),
+    radial-gradient(
+      circle at 60% 35%,
+      rgba(182, 138, 74, 0.2),
+      transparent 30%
+    ),
     linear-gradient(145deg, #2c2823, #101010);
   transition: transform 0.55s ease;
 }
 
 .gallery-item:nth-child(2) .gallery-placeholder {
   background:
-    radial-gradient(circle at 45% 40%, rgba(160, 160, 160, 0.19), transparent 30%),
+    radial-gradient(
+      circle at 45% 40%,
+      rgba(160, 160, 160, 0.19),
+      transparent 30%
+    ),
     linear-gradient(145deg, #1e1e1e, #090909);
 }
 
 .gallery-item:nth-child(3) .gallery-placeholder {
   background:
-    radial-gradient(circle at 70% 30%, rgba(121, 47, 31, 0.28), transparent 30%),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(121, 47, 31, 0.28),
+      transparent 30%
+    ),
     linear-gradient(145deg, #251612, #0d0d0d);
 }
 
@@ -601,7 +613,11 @@ h3 {
 
 .gallery-item:nth-child(5) .gallery-placeholder {
   background:
-    radial-gradient(circle at 60% 35%, rgba(111, 28, 31, 0.28), transparent 30%),
+    radial-gradient(
+      circle at 60% 35%,
+      rgba(111, 28, 31, 0.28),
+      transparent 30%
+    ),
     linear-gradient(145deg, #241416, #0c0c0c);
 }
 
@@ -982,7 +998,7 @@ h3 {
   }
 
   .service-card {
-    min-height: auto;
+    min-height: 0;
   }
 
   .service-number {
@@ -1002,11 +1018,6 @@ h3 {
 /* ========================================
    Additional phone and small-screen support
 ======================================== */
-
-html {
-  text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
 body {
   width: 100%;
@@ -1262,7 +1273,11 @@ a {
   padding: 160px 24px 90px;
   background:
     linear-gradient(to top, #0b0b0b 0%, rgba(11, 11, 11, 0.25) 75%),
-    radial-gradient(circle at 75% 35%, rgba(182, 138, 74, 0.27), transparent 35%),
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(182, 138, 74, 0.27),
+      transparent 35%
+    ),
     linear-gradient(135deg, #080808, #211b15, #090909);
 }
 
@@ -1342,13 +1357,21 @@ a {
 
 .artist-image-one {
   background:
-    radial-gradient(circle at 55% 35%, rgba(182, 138, 74, 0.24), transparent 30%),
+    radial-gradient(
+      circle at 55% 35%,
+      rgba(182, 138, 74, 0.24),
+      transparent 30%
+    ),
     linear-gradient(145deg, #2c2722, #101010);
 }
 
 .artist-image-two {
   background:
-    radial-gradient(circle at 45% 32%, rgba(156, 136, 116, 0.24), transparent 30%),
+    radial-gradient(
+      circle at 45% 32%,
+      rgba(156, 136, 116, 0.24),
+      transparent 30%
+    ),
     linear-gradient(145deg, #282522, #0d0d0d);
 }
 
@@ -1360,7 +1383,11 @@ a {
 
 .artist-image-four {
   background:
-    radial-gradient(circle at 50% 35%, rgba(121, 31, 38, 0.28), transparent 30%),
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(121, 31, 38, 0.28),
+      transparent 30%
+    ),
     linear-gradient(145deg, #261517, #0c0c0c);
 }
 
@@ -1658,61 +1685,101 @@ a {
 
 .tattoo-art-one {
   background:
-    radial-gradient(circle at 48% 32%, rgba(185, 173, 155, 0.23), transparent 26%),
+    radial-gradient(
+      circle at 48% 32%,
+      rgba(185, 173, 155, 0.23),
+      transparent 26%
+    ),
     linear-gradient(145deg, #34312e, #101010);
 }
 
 .tattoo-art-two {
   background:
-    radial-gradient(circle at 55% 35%, rgba(159, 148, 131, 0.24), transparent 28%),
+    radial-gradient(
+      circle at 55% 35%,
+      rgba(159, 148, 131, 0.24),
+      transparent 28%
+    ),
     linear-gradient(145deg, #292722, #0d0d0d);
 }
 
 .tattoo-art-three {
   background:
-    radial-gradient(circle at 50% 38%, rgba(126, 43, 27, 0.34), transparent 27%),
+    radial-gradient(
+      circle at 50% 38%,
+      rgba(126, 43, 27, 0.34),
+      transparent 27%
+    ),
     linear-gradient(145deg, #2b1712, #0d0d0d);
 }
 
 .tattoo-art-four {
   background:
-    radial-gradient(circle at 60% 35%, rgba(122, 27, 35, 0.35), transparent 30%),
+    radial-gradient(
+      circle at 60% 35%,
+      rgba(122, 27, 35, 0.35),
+      transparent 30%
+    ),
     linear-gradient(145deg, #2a1518, #0b0b0b);
 }
 
 .tattoo-art-five {
   background:
-    radial-gradient(circle at 55% 35%, rgba(172, 95, 48, 0.33), transparent 28%),
+    radial-gradient(
+      circle at 55% 35%,
+      rgba(172, 95, 48, 0.33),
+      transparent 28%
+    ),
     linear-gradient(145deg, #312016, #0d0d0d);
 }
 
 .tattoo-art-six {
   background:
-    radial-gradient(circle at 48% 35%, rgba(139, 139, 139, 0.25), transparent 27%),
+    radial-gradient(
+      circle at 48% 35%,
+      rgba(139, 139, 139, 0.25),
+      transparent 27%
+    ),
     linear-gradient(145deg, #282828, #0c0c0c);
 }
 
 .tattoo-art-seven {
   background:
-    radial-gradient(circle at 50% 32%, rgba(170, 156, 132, 0.25), transparent 28%),
+    radial-gradient(
+      circle at 50% 32%,
+      rgba(170, 156, 132, 0.25),
+      transparent 28%
+    ),
     linear-gradient(145deg, #28241f, #0d0d0d);
 }
 
 .tattoo-art-eight {
   background:
-    radial-gradient(circle at 55% 38%, rgba(145, 55, 30, 0.34), transparent 27%),
+    radial-gradient(
+      circle at 55% 38%,
+      rgba(145, 55, 30, 0.34),
+      transparent 27%
+    ),
     linear-gradient(145deg, #2d1913, #0d0d0d);
 }
 
 .tattoo-art-nine {
   background:
-    radial-gradient(circle at 55% 34%, rgba(107, 34, 39, 0.34), transparent 29%),
+    radial-gradient(
+      circle at 55% 34%,
+      rgba(107, 34, 39, 0.34),
+      transparent 29%
+    ),
     linear-gradient(145deg, #281619, #0c0c0c);
 }
 
 .tattoo-art-ten {
   background:
-    radial-gradient(circle at 55% 35%, rgba(173, 62, 55, 0.34), transparent 29%),
+    radial-gradient(
+      circle at 55% 35%,
+      rgba(173, 62, 55, 0.34),
+      transparent 29%
+    ),
     linear-gradient(145deg, #311719, #0c0c0c);
 }
 
@@ -1814,7 +1881,11 @@ a {
 .booking-page-hero {
   background:
     linear-gradient(to top, #0b0b0b 0%, rgba(11, 11, 11, 0.25) 75%),
-    radial-gradient(circle at 75% 35%, rgba(182, 138, 74, 0.25), transparent 35%),
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(182, 138, 74, 0.25),
+      transparent 35%
+    ),
     linear-gradient(135deg, #080808, #241c14, #090909);
 }
 
@@ -2242,11 +2313,7 @@ a {
 .image-placeholder {
   position: relative;
   background:
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.38),
-      rgba(0, 0, 0, 0.04)
-    ),
+    linear-gradient(to top, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.04)),
     url("../images/studio-interior.jpg") center center / cover no-repeat;
 }
 
@@ -2266,11 +2333,7 @@ a {
 .artist-image::before {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.62),
-    transparent 52%
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.62), transparent 52%);
   content: "";
 }
 
@@ -2374,5 +2437,761 @@ a {
 
   .tattoo-art {
     background-position: center;
+  }
+}
+/* ========================================
+   Homepage featured tattoo photographs
+======================================== */
+
+/* Black & Grey */
+.gallery-preview-grid .gallery-item:nth-child(1) .gallery-placeholder {
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.05) 65%),
+    url("../images/tattoo-06.jpg") center / cover no-repeat;
+}
+
+/* Fine Line */
+.gallery-preview-grid .gallery-item:nth-child(2) .gallery-placeholder {
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.05) 65%),
+    url("../images/tattoo-02.jpg") center / cover no-repeat;
+}
+
+/* Traditional */
+.gallery-preview-grid .gallery-item:nth-child(3) .gallery-placeholder {
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.05) 65%),
+    url("../images/tattoo-03.jpg") center / cover no-repeat;
+}
+
+/* Realism */
+.gallery-preview-grid .gallery-item:nth-child(4) .gallery-placeholder {
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.05) 65%),
+    url("../images/tattoo-01.jpg") center / cover no-repeat;
+}
+
+/* Japanese */
+.gallery-preview-grid .gallery-item:nth-child(5) .gallery-placeholder {
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.05) 65%),
+    url("../images/tattoo-04.jpg") center / cover no-repeat;
+}
+/* ========================================
+   Artists page persistent background
+======================================== */
+
+.artists-page {
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+  background: #080808;
+}
+
+/* Fixed background that remains while scrolling */
+.artists-page::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+
+  background:
+    radial-gradient(
+      circle at 82% 15%,
+      rgba(182, 138, 74, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(circle at 12% 58%, rgba(103, 42, 39, 0.1), transparent 32%),
+    radial-gradient(
+      circle at 75% 85%,
+      rgba(182, 138, 74, 0.08),
+      transparent 28%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    #080808;
+
+  background-size:
+    auto,
+    auto,
+    auto,
+    54px 54px,
+    54px 54px,
+    auto;
+}
+
+/* Subtle vertical ornamental element */
+.artists-page::after {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  pointer-events: none;
+  content: "";
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(182, 138, 74, 0.18),
+    transparent
+  );
+}
+
+/* Keep all page content above the background */
+.artists-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Allow the background to show through the page sections */
+.artists-page .page-hero {
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 8, 8, 0.16),
+    rgba(8, 8, 8, 0.72)
+  );
+}
+
+.artists-page .artists-section {
+  background: transparent;
+}
+
+/* Softer background on phones */
+@media (max-width: 600px) {
+  .artists-page::before {
+    background-size:
+      auto,
+      auto,
+      auto,
+      38px 38px,
+      38px 38px,
+      auto;
+  }
+
+  .artists-page::after {
+    display: none;
+  }
+}
+/* ========================================
+   Badass thorn-rose background
+======================================== */
+
+.vine-background {
+  position: fixed !important;
+  inset: 0;
+  z-index: 0 !important;
+  pointer-events: none;
+  overflow: hidden;
+  mix-blend-mode: normal;
+}
+
+.vine-background svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.rose-vine {
+  opacity: 0.62;
+}
+
+.vine-stem {
+  fill: none;
+  stroke: rgba(163, 124, 64, 0.82);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.thorn {
+  fill: rgba(98, 19, 22, 0.82);
+  stroke: rgba(202, 158, 90, 0.78);
+  stroke-width: 1.15;
+  vector-effect: non-scaling-stroke;
+}
+
+.vine-leaf {
+  fill: rgba(42, 44, 28, 0.48);
+  stroke: rgba(161, 125, 71, 0.54);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.rose-shadow {
+  fill: rgba(30, 4, 7, 0.18);
+}
+
+.rose-petal {
+  stroke: rgba(230, 198, 135, 0.32);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.rose-petal-1 {
+  fill: rgba(87, 8, 18, 0.74);
+}
+
+.rose-petal-2 {
+  fill: rgba(120, 15, 28, 0.7);
+}
+
+.rose-petal-3 {
+  fill: rgba(65, 6, 14, 0.74);
+}
+
+.rose-petal-inner {
+  fill: rgba(160, 31, 46, 0.7);
+  stroke: rgba(236, 205, 149, 0.25);
+  stroke-width: 0.9;
+}
+
+.rose-center {
+  fill: rgba(61, 8, 17, 0.95);
+  stroke: rgba(214, 171, 103, 0.52);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.bud-shape {
+  fill: rgba(98, 14, 26, 0.74);
+  stroke: rgba(210, 170, 103, 0.38);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.bud-cap {
+  fill: rgba(140, 32, 40, 0.62);
+  stroke: rgba(234, 205, 147, 0.24);
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Make page content sit above the background */
+.artists-page > header,
+.artists-page > main,
+.artists-page > footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Slightly darker sections so the background feels heavier */
+.artists-page .page-hero {
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 7, 7, 0.3),
+    rgba(7, 7, 7, 0.82)
+  );
+}
+
+.artists-page .artists-section {
+  background: transparent;
+}
+
+.artists-page .artist-cta {
+  background: rgba(12, 12, 12, 0.85);
+  border-top: 1px solid rgba(182, 138, 74, 0.08);
+  border-bottom: 1px solid rgba(182, 138, 74, 0.08);
+}
+
+.artists-page .site-footer {
+  background: rgba(5, 5, 5, 0.94);
+}
+
+/* Optional: stronger mood by dimming center line if you still have it */
+.artists-page::after {
+  opacity: 0.35;
+}
+
+/* Phone sizing */
+@media (max-width: 700px) {
+  .rose-vine {
+    opacity: 0.3;
+  }
+
+  .vine-background svg {
+    width: 155%;
+    margin-left: -27.5%;
+  }
+
+  .vine-stem {
+    stroke-width: 1.8;
+  }
+
+  .thorn {
+    stroke-width: 0.9;
+  }
+}
+/* ========================================
+   Shared dark floral page backgrounds
+======================================== */
+
+.themed-page {
+  --line-position: 50%;
+
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+  background: #080808;
+}
+
+/* Shared stationary grid and lighting */
+.themed-page::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(182, 138, 74, 0.11),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 15% 70%,
+      rgba(105, 16, 28, 0.11),
+      transparent 32%
+    ),
+    linear-gradient(
+      rgba(255, 255, 255, 0.022) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.022) 1px,
+      transparent 1px
+    ),
+    #080808;
+
+  background-size:
+    auto,
+    auto,
+    54px 54px,
+    54px 54px,
+    auto;
+}
+
+/* Subtle gold line, placed differently on each page */
+.themed-page::after {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: var(--line-position);
+  width: 1px;
+  pointer-events: none;
+  content: "";
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(182, 138, 74, 0.12),
+    transparent
+  );
+}
+
+.home-page {
+  --line-position: 76%;
+}
+
+.artists-page {
+  --line-position: 50%;
+}
+
+.gallery-page {
+  --line-position: 24%;
+}
+
+.booking-page {
+  --line-position: 84%;
+}
+
+/* Static SVG background */
+.page-floral-background,
+.themed-page > .vine-background {
+  position: fixed !important;
+  z-index: 1 !important;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  contain: paint;
+}
+
+.page-floral-background svg,
+.themed-page > .vine-background svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  shape-rendering: geometricPrecision;
+}
+
+/* Keep content above every background */
+.themed-page > .site-header {
+  position: fixed;
+  z-index: 1000;
+}
+
+.themed-page > main,
+.themed-page > footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Remove all expensive movement and effects */
+.page-floral-background,
+.page-floral-background *,
+.themed-page > .vine-background,
+.themed-page > .vine-background * {
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+  will-change: auto !important;
+}
+
+/* Shared vines */
+.page-vine {
+  fill: none;
+  stroke: rgba(174, 135, 72, 0.64);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.page-thorn {
+  fill: rgba(105, 12, 27, 0.8);
+  stroke: rgba(198, 151, 79, 0.6);
+  stroke-width: 1.1;
+  vector-effect: non-scaling-stroke;
+}
+
+.page-leaf {
+  fill: rgba(38, 42, 27, 0.48);
+  stroke: rgba(174, 135, 72, 0.48);
+  stroke-width: 1.1;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ========================================
+   Home: black dahlias
+======================================== */
+
+.home-floral {
+  opacity: 0.52;
+}
+
+.dahlia-petal {
+  stroke: rgba(199, 157, 91, 0.38);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.dahlia-petal.petal-a {
+  fill: rgba(54, 4, 14, 0.82);
+}
+
+.dahlia-petal.petal-b {
+  fill: rgba(89, 8, 22, 0.72);
+}
+
+.dahlia-inner {
+  fill: rgba(125, 15, 34, 0.7);
+  stroke: rgba(216, 172, 100, 0.32);
+  stroke-width: 0.9;
+  vector-effect: non-scaling-stroke;
+}
+
+.dahlia-center {
+  fill: rgba(20, 2, 7, 0.98);
+  stroke: rgba(204, 156, 84, 0.62);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ========================================
+   Gallery: red spider lilies
+======================================== */
+
+.gallery-floral {
+  opacity: 0.48;
+}
+
+.spider-petal {
+  fill: none;
+  stroke: rgba(126, 15, 34, 0.82);
+  stroke-width: 8;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.spider-stamen {
+  fill: none;
+  stroke: rgba(196, 46, 63, 0.74);
+  stroke-width: 2;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.spider-center {
+  fill: rgba(44, 3, 12, 0.96);
+  stroke: rgba(198, 151, 79, 0.72);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.stamen-tip {
+  fill: rgba(202, 153, 79, 0.78);
+}
+
+/* ========================================
+   Booking: black calla lilies
+======================================== */
+
+.booking-floral {
+  opacity: 0.5;
+}
+
+.calla-stem {
+  fill: none;
+  stroke: rgba(174, 135, 72, 0.64);
+  stroke-width: 3;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.calla-petal {
+  fill: rgba(56, 4, 16, 0.8);
+  stroke: rgba(203, 159, 91, 0.55);
+  stroke-width: 1.7;
+  vector-effect: non-scaling-stroke;
+}
+
+.calla-inner {
+  fill: rgba(118, 13, 34, 0.62);
+  stroke: rgba(225, 184, 111, 0.32);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.calla-spadix {
+  fill: none;
+  stroke: rgba(207, 161, 87, 0.85);
+  stroke-width: 7;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ========================================
+   Let floral artwork show through sections
+======================================== */
+
+.themed-page .page-hero {
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 8, 8, 0.22),
+    rgba(8, 8, 8, 0.8)
+  );
+}
+
+.home-page .about-section,
+.home-page .gallery-preview-section {
+  background: rgba(8, 8, 8, 0.74);
+}
+
+.home-page .services-section,
+.home-page .process-section {
+  background: rgba(15, 15, 15, 0.8);
+}
+
+.home-page .testimonial-section {
+  background: rgba(9, 9, 9, 0.86);
+}
+
+.artists-page .artists-section {
+  background: rgba(8, 8, 8, 0.7);
+}
+
+.gallery-page .tattoo-gallery-section {
+  background: rgba(8, 8, 8, 0.72);
+}
+
+.booking-page .booking-section {
+  background: rgba(8, 8, 8, 0.72);
+}
+
+.booking-page .booking-faq-section {
+  background: rgba(15, 15, 15, 0.82);
+}
+
+/* Matching dark CTA sections */
+.themed-page .cta-section,
+.themed-page .artist-cta,
+.themed-page .gallery-cta {
+  border-top: 1px solid rgba(182, 138, 74, 0.12);
+  border-bottom: 1px solid rgba(182, 138, 74, 0.12);
+  background: rgba(12, 12, 12, 0.92);
+  color: var(--text-primary);
+}
+
+.themed-page .cta-section .section-label {
+  color: var(--accent-light);
+}
+
+.themed-page .cta-section .button-primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #0b0b0b;
+}
+
+.themed-page .site-footer {
+  background: rgba(5, 5, 5, 0.97);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* ========================================
+   Phone adjustments
+======================================== */
+
+@media (max-width: 700px) {
+  .themed-page::after {
+    display: none;
+  }
+
+  .themed-page::before {
+    background-size:
+      auto,
+      auto,
+      38px 38px,
+      38px 38px,
+      auto;
+  }
+
+  .page-floral-background {
+    opacity: 0.25;
+  }
+
+  .home-floral svg {
+    width: 145%;
+    margin-left: -20%;
+  }
+
+  .gallery-floral svg {
+    width: 145%;
+    margin-left: -18%;
+  }
+
+  .booking-floral svg {
+    width: 150%;
+    margin-left: -25%;
+  }
+
+  .page-vine {
+    stroke-width: 1.7;
+  }
+
+  .page-thorn {
+    stroke-width: 0.8;
+  }
+}
+/* ========================================
+   Make floral backgrounds more visible
+======================================== */
+
+/* Strengthen the artwork */
+.home-floral {
+  opacity: 0.82;
+}
+
+.gallery-floral {
+  opacity: 0.78;
+}
+
+.booking-floral {
+  opacity: 0.8;
+}
+
+.artists-page > .vine-background {
+  opacity: 0.82;
+}
+
+.artists-page .rose-vine {
+  opacity: 0.9;
+}
+
+/* Make interior page hero backgrounds more transparent */
+.themed-page .page-hero {
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 8, 8, 0.08),
+    rgba(8, 8, 8, 0.52)
+  );
+}
+
+/* Home page sections */
+.home-page .about-section,
+.home-page .gallery-preview-section {
+  background: rgba(8, 8, 8, 0.46);
+}
+
+.home-page .services-section,
+.home-page .process-section {
+  background: rgba(14, 14, 14, 0.56);
+}
+
+.home-page .testimonial-section {
+  background: rgba(9, 9, 9, 0.62);
+}
+
+/* Artists page */
+.artists-page .artists-section {
+  background: rgba(8, 8, 8, 0.42);
+}
+
+/* Gallery page */
+.gallery-page .tattoo-gallery-section {
+  background: rgba(8, 8, 8, 0.44);
+}
+
+/* Booking page */
+.booking-page .booking-section {
+  background: rgba(8, 8, 8, 0.46);
+}
+
+.booking-page .booking-faq-section {
+  background: rgba(14, 14, 14, 0.56);
+}
+
+/* Keep CTA sections dark enough for readable text */
+.themed-page .cta-section,
+.themed-page .artist-cta,
+.themed-page .gallery-cta {
+  background: rgba(12, 12, 12, 0.72);
+}
+
+/* Slightly reveal artwork through the footer */
+.themed-page .site-footer {
+  background: rgba(5, 5, 5, 0.88);
+}
+
+/* Keep the design more subtle on phones */
+@media (max-width: 700px) {
+  .home-floral,
+  .gallery-floral,
+  .booking-floral {
+    opacity: 0.48;
+  }
+
+  .artists-page > .vine-background {
+    opacity: 0.48;
+  }
+
+  .artists-page .rose-vine {
+    opacity: 0.7;
   }
 }
